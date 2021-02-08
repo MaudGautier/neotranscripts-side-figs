@@ -91,12 +91,6 @@ wget http://hgdownload.cse.ucsc.edu/goldenpath/hg19/phastCons100way/hg19.100way.
 
 # 2. Transform to bed format (via bedgraph)
 bigWigToBedGraph $output_dir/hg19.100way.phastCons.bw $output_dir/hg19.100way.phastCons.bedgraph
-awk '{ \
-	if ($1 ~ /^chr/) { \
-		print $1"\t"$2"\t"$3"\tid-"NR"\t"$4; \
-	} \
-}' $output_dir/hg19.100way.phastCons.bedgraph \
-> $output_dir/hg19.100way.phastCons.bed
 
 # 3. Get exons from GTF file
 get_exons ${gtf_file} ${exons}
