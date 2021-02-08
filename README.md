@@ -48,6 +48,11 @@ Then, modify parameters and execute the [``config/get_phastcons_scores_per_exon.
 sh ./config/get_phastcons_scores_per_exon.sh
 ```
 
+Last, to plot, modify parameters and execute the [``config/plot_phastcons_scores.R`` file](https://github.com/MaudGautier/neotranscripts-side-figs/tree/main/config/plot_phastcons_scores.R) using this command line:
+```
+sh ./config/plot_phastcons_scores.R
+```
+
 
 
 ## Requirements
