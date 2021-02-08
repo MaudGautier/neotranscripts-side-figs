@@ -58,8 +58,8 @@ awk -v OFS="\t" '{print $1, $2+$10, $4}' ${ChIP_peaks_file} \
 #             Get TSS to ChIP peak distance for EwS neotranscripts             #
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
 
-# Get TSS to EwS_WT1 ChIP peak distance for EwS neotranscripts
-output_file=${output_dir}/Closest_TSS_from_EwS_WT1_ChIP_peak_for_EwS_neotranscripts.txt
+# Get TSS to EwS_WT1 ChIP peak distance for DSRCT neotranscripts
+output_file=${output_dir}/Closest_TSS_from_EwS_WT1_ChIP_peak_for_DSRCT_neotranscripts.txt
 sh ./src/sh/TSS_to_ChIP_peak_distance.sh \
 	-i $gtf_file \
 	-o $output_file \
