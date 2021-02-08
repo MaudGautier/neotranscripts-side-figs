@@ -33,6 +33,22 @@ Then, to plot the figure, prepare a configuration file in a similar fashion to t
 sh ./config/config/plot_TSS_to_ChIP_peak_distance_for_DSRCT.R
 ```
 
+**Phastcons scores**
+Running the phastCons score calculation requires the installation of the jvarkit tool by following this procedure:
+```
+# Install jvarkit - bioalcidaejdk
+cd ~/bin/
+git clone "https://github.com/lindenb/jvarkit.git"
+cd jvarkit
+./gradlew bioalcidaejdk
+```
+
+Then, modify parameters and execute the [``config/get_phastcons_scores_per_exon.sh`` file](https://github.com/MaudGautier/neotranscripts-side-figs/tree/main/config/get_phastcons_scores_per_exon.sh) using this command line:
+```
+sh ./config/get_phastcons_scores_per_exon.sh
+```
+
+
 
 ## Requirements
 
@@ -44,6 +60,7 @@ The following applications must be installed:
 * bedtools, version 2.27.1
 * weblogo, version 3.6.0
 * R, version 4.0.3
+* jvarkit bioalcidaejdk
 
 To plot figures, the `ggplot2` package must be installed in R.
 
