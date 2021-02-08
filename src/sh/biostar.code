@@ -1,0 +1,9 @@
+stream().
+    flatMap(GENE->GENE.getTranscripts().stream()).
+    flatMap(TRANSCRIPT->{
+        final List<Interval> L = new ArrayList<>();
+        TRANSCRIPT.getExons().stream().forEach(E->L.add(E.toInterval()));
+        TRANSCRIPT.getIntrons().stream().forEach(I->L.add(I.toInterval()));
+        TRANSCRIPT.getUTRs().stream().forEach(U->L.add(U.toInterval()));
+        return L.stream();
+        }).forEach(R->println(R.getContig()+"\t"+(R.getStart()-1)+"\t"+R.getEnd()+"\t"+R.getStrand()+"\t"+R.getName()));
