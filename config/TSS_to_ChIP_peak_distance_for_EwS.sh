@@ -30,8 +30,8 @@ EwS_gtf_file=/data/kdi_prod/project_result/726/27.01/results/1_Data/201201_Ewing
 hg19_gtf_file=/data/annotations/pipelines/Human/hg19/gtf/gencode.v19.annotation.sorted.gtf
 
 # Output
-temp_dir=${output_dir}/temp
 output_dir=/data/kdi_prod/project_result/726/27.01/results/tests_distances
+temp_dir=${output_dir}/temp
 EwS_FLI1_ChIP_peaks=${output_dir}/EwS_FLI1_ChIP_peaks_with_more_than_4_GGAA_repeats.txt
 EwS_FLI1_ChIP_summits=${output_dir}/EwS_FLI1_ChIP_peaks_with_more_than_4_GGAA_repeats_SUMMITS.txt
 
@@ -81,7 +81,7 @@ sh ./src/sh/TSS_to_ChIP_peak_distance.sh \
 
 
 # Get TSS to EwS_FLI1 ChIP peak distance for all hg19 transcrips
-output_file=${output_dir}/Closest_TSS_from_ChIP_peak_for_all_hg19_transcripts.txt
+output_file=${output_dir}/Closest_TSS_from_EwS_FLI1_ChIP_peak_for_all_hg19_transcripts.txt
 sh ./src/sh/TSS_to_ChIP_peak_distance.sh \
 	-i $hg19_gtf_file \
 	-o $output_file \
