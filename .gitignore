@@ -1,3 +1,5 @@
 # Swap files
 **/.*swp
 
+# Output folder
+output/
