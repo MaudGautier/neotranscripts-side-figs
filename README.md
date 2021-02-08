@@ -61,6 +61,7 @@ The following applications must be installed:
 * weblogo, version 3.6.0
 * R, version 4.0.3
 * jvarkit bioalcidaejdk
+* java, version 1.8
 
 To plot figures, the `ggplot2` package must be installed in R.
 
