@@ -13,11 +13,12 @@
 
 # This script contains the functions required to plot figures.
 
-
 # Create TSS to ChIP distance plot ----------------------------------------
 draw_TSS_to_ChIP_distance <- function(data_plot, 
                                       plot_name, 
                                       name_neotranscripts,
+									  lab_x, lab_y,
+									  ratio,
                                       col1="pink", col2 = "lightblue") {
   
   # Open output file
