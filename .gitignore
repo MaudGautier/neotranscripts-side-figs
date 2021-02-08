@@ -1,5 +1,7 @@
 # Swap files
 **/.*swp
 
-# Output folder
-output/
+# Data folders
+input/
+plots/
+
