@@ -3,6 +3,6 @@
 **/.DS_Store
 
 # Data folders
-input/
+data/
 plots/
 
