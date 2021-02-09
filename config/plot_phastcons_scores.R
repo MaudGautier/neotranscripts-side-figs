@@ -26,6 +26,7 @@ cons_protein_coding_OUT_UTR_per_exon <- read.table(paste0(folder_phastcons_per_e
 cons_neogenes_per_exon <- read.table(paste0(folder_phastcons_per_exon, 'neotranscripts.txt'))
 
 # Graphical parameters
+output_dir <- "./plots/"
 width <- 595
 height <- 530
 
