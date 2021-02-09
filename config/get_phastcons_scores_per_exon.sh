@@ -140,4 +140,8 @@ bedtools intersect -v \
 	> $per_category_dir/protein_coding_outside_UTR.txt
 get_score_per_exon $per_category_dir/protein_coding_outside_UTR.txt $per_exon_dir/protein_coding_outside_UTR.txt
 
+# NB: process killed before finishing
+# cut -f8 $output_dir/per_category_scores/protein_coding_with_UTR |cut -d"." -f1|sort|uniq | wl
+# 2,063
+# => 2063 proteins considered for plotting
 
